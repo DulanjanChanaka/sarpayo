@@ -1,21 +1,19 @@
 
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import React from 'react';
-import { getFirestore, collection, onSnapshot } from 'firebase/firestore';
 
-import { db } from "../../firebase/firebase";
 import snakedata from "../../SnakeData/Data"
 
 
 function SearchContent() {
 
-  
+
 
   const [selectedColor, setSelectedColor] = useState("");
   const [selectedBodyShape, setSelectedBodyShape] = useState("");
 
-  
+
   const handleColorChange = (event) => {
     setSelectedColor(event.target.value);
     console.log(selectedColor);
@@ -27,7 +25,7 @@ function SearchContent() {
   };
 
 
-  
+
 
   const filteredSnakes = snakedata.filter((snakedata) => {
     if (selectedColor && snakedata.bodycolor !== selectedColor) {
@@ -35,7 +33,7 @@ function SearchContent() {
       return false;
     }
     if (selectedBodyShape && snakedata.style !== selectedBodyShape) {
-      
+
       return false;
     }
     return true;
@@ -82,7 +80,7 @@ function SearchContent() {
             key={index}
             className="bg-lime-700 rounded-2xl"
           >
-            <img src={snakedata.photo} alt={snakedata.name} className="w-full h-[300px] rounded-2xl"/>
+            <img src={snakedata.photo} alt={snakedata.name} className="w-full h-[300px] rounded-2xl" />
             <h2 className="text-center text-white py-3">{snakedata.name}</h2>
           </div>
         ))}

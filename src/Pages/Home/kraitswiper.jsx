@@ -44,7 +44,7 @@ const Kraitswiper = () => {
         {kraitdata.map((data) => (
           <div key={data.id}>
             <div>
-              <img src={data.link} alt={`Python Image ${data.id}`} />
+              <img src={data.link} alt={`Python  ${data.id}`} />
             </div>
           </div>
         ))}

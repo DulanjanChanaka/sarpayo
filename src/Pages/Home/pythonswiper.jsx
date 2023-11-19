@@ -44,7 +44,7 @@ const Pythonswiper = () => {
         {pythondata.map((data) => (
           <div key={data.id} className=''>
             <div >
-              <img src={data.link} alt={`Python Image ${data.id}`} />
+              <img src={data.link} alt={`Python  ${data.id}`} />
             </div>
           </div>
         ))}

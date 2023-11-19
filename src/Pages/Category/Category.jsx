@@ -60,7 +60,7 @@ const Category = () => {
         <div key={data.id}>
           <div className="">
             
-            <img src={data.photo} alt={`Poison Type 1 Image ${data.id}`} className="h-[400px] w-full rounded-lg" />
+            <img src={data.photo} alt={`Poison Type 1  ${data.id}`} className="h-[400px] w-full rounded-lg" />
           </div>
           <div className="text-center font-semibold text-lg py-3">
               <h3>{data.name}</h3>
@@ -77,7 +77,7 @@ const Category = () => {
         {filterDataByPoisonType("2").map((data) => (
           <div key={data.id}>
             <div>
-              <img src={data.photo} alt={`Poison Type 2 Image ${data.id}`} className="h-[400px] w-full rounded-lg" />
+              <img src={data.photo} alt={`Poison Type 2  ${data.id}`} className="h-[400px] w-full rounded-lg" />
             </div>
             <div className="text-center font-semibold text-lg py-3">
               <h3>{data.name}</h3>
@@ -94,7 +94,7 @@ const Category = () => {
         {filterDataByPoisonType("3").map((data) => (
           <div key={data.id}>
             <div>
-              <img src={data.photo} alt={`Poison Type 2 Image ${data.id}`} className="h-[400px] w-full rounded-lg" />
+              <img src={data.photo} alt={`Poison Type 2  ${data.id}`} className="h-[400px] w-full rounded-lg" />
             </div>
             <div className="text-center font-semibold text-lg py-3">
               <h3>{data.name}</h3>
@@ -110,7 +110,7 @@ const Category = () => {
         {filterDataByPoisonType("4").map((data) => (
           <div key={data.id}>
             <div>
-              <img src={data.photo} alt={`Poison Type 2 Image ${data.id}`} className="h-[400px] w-full rounded-lg"/>
+              <img src={data.photo} alt={`Poison Type 2 ${data.id}`} className="h-[400px] w-full rounded-lg"/>
             </div>
             <div className="text-center font-semibold text-lg py-3">
               <h3>{data.name}</h3>

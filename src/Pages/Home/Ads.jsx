@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -29,9 +29,9 @@ export default function App() {
         modules={[Autoplay, Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide><img src='https://images.pexels.com/photos/19085784/pexels-photo-19085784/free-photo-of-a-snake-between-green-leaves.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'/></SwiperSlide>
-        <SwiperSlide><img src='https://images.pexels.com/photos/2062316/pexels-photo-2062316.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'/></SwiperSlide>
-        <SwiperSlide><img src='https://images.pexels.com/photos/12149595/pexels-photo-12149595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'/></SwiperSlide>
+        <SwiperSlide><img src='https://images.pexels.com/photos/19085784/pexels-photo-19085784/free-photo-of-a-snake-between-green-leaves.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt='swiper'/></SwiperSlide>
+        <SwiperSlide><img src='https://images.pexels.com/photos/2062316/pexels-photo-2062316.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt='swiper'/></SwiperSlide>
+        <SwiperSlide><img src='https://images.pexels.com/photos/12149595/pexels-photo-12149595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt='swiper'/></SwiperSlide>
         
       </Swiper>
     </>
