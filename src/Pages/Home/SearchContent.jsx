@@ -28,8 +28,8 @@ function SearchContent() {
 
 
   const filteredSnakes = snakedata.filter((snakedata) => {
-    if (selectedColor && snakedata.bodycolor !== selectedColor) {
-      console.log("Color filter:", selectedColor, snakedata.bodycolor);
+    if (selectedColor && snakedata.bodyColor !== selectedColor) {
+      console.log("Color filter:", selectedColor, snakedata.bodyColor);
       return false;
     }
     if (selectedBodyShape && snakedata.style !== selectedBodyShape) {
